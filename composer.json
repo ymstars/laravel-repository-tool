@@ -40,6 +40,5 @@
                 "Ymstars\\Repository\\Providers\\YmstarsRepositoryServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
