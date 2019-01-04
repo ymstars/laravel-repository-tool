@@ -4,9 +4,9 @@ $NAMESPACE$
 
 use Ymstars\Repository\Eloquent\BaseRepository;
 use Ymstars\Repository\Criteria\RequestCriteria;
+use $PRESENTER$
 use $REPOSITORY$
 use $MODEL$;
-use $PRESENTER$;
 
 /**
  * Class $CLASS$RepositoryEloquent.

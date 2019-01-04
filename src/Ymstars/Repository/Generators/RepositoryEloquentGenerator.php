@@ -71,9 +71,16 @@ class RepositoryEloquentGenerator extends Generator
             '/'
         ], '\\', $repository);
 
+        $presenter = parent::getRootNamespace() . parent::getConfigGeneratorClassPath('presenters') . '\\' . $this->name . 'Presenter;';
+        $presenter = str_replace([
+            "\\",
+            '/'
+        ], '\\', $presenter);
+
         return array_merge(parent::getReplacements(), [
             'fillable'   => $this->getFillable(),
             'repository' => $repository,
+            'presenter'  => $presenter,
             'model'      => isset($this->options['model']) ? $this->options['model'] : ''
         ]);
     }

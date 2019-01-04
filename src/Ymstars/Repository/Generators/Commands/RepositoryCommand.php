@@ -98,21 +98,11 @@ class RepositoryCommand extends Command
             '/'
         ], '\\', $model);
 
-        $presenterGenerator = new PresenterGenerator([
-            'name' => $this->argument('name'),
-        ]);
-        $presenter = $presenterGenerator->getRootNamespace() . '\\' . $presenterGenerator->getName();
-        $presenter = str_replace([
-            "\\",
-            '/'
-        ], '\\', $presenter);
-
         try {
             (new RepositoryEloquentGenerator([
-                'name'      => $this->argument('name'),
-                'force'     => $this->option('force'),
-                'model'     => $model,
-                'presenter' => $presenter
+                'name'  => $this->argument('name'),
+                'force' => $this->option('force'),
+                'model' => $model,
             ]))->run();
             $this->info("Repository created successfully.");
         } catch (FileAlreadyExistsException $e) {
