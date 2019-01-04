@@ -1,0 +1,45 @@
+{
+    "name": "ymm/laravel-repository-tool",
+    "description": "laravel repository tool product by ymstars",
+    "type": "library",
+    "require": {
+        "illuminate/http": "~5.0",
+        "illuminate/config": "~5.0",
+        "illuminate/support": "~5.0",
+        "illuminate/database": "~5.0",
+        "illuminate/pagination": "~5.0",
+        "illuminate/console": "~5.0",
+        "illuminate/filesystem": "~5.0",
+        "league/fractal": "^0.12"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "曾俊杰",
+            "homepage": "https://www.ymstars.com",
+            "email": "ymstars@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.ymstars.com",
+    "support": {
+        "email": "ymstars@qq.com",
+        "issues": "https://github.com/ymstars/laravel-repository-quick/issues",
+        "wiki": "https://github.com/ymstars/laravel-repository-quick",
+        "source": "https://github.com/ymstars/laravel-repository-quick",
+        "docs": "https://github.com/ymstars/laravel-repository-quick"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ymstars\\Repository\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ymstars\\Repository\\Providers\\YmstarsRepositoryServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}

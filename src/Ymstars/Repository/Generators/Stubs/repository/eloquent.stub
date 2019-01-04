@@ -1,0 +1,40 @@
+<?php
+
+$NAMESPACE$
+
+use Ymstars\Repository\Eloquent\BaseRepository;
+use Ymstars\Repository\Criteria\RequestCriteria;
+use $REPOSITORY$
+use $MODEL$;
+use $PRESENTER$;
+
+/**
+ * Class $CLASS$RepositoryEloquent.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$RepositoryEloquent extends BaseRepository implements $CLASS$Repository
+{
+    protected $defaultPresenterClass = $CLASS$Presenter::class;
+
+
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    public function model()
+    {
+        return $CLASS$::class;
+    }
+
+    /**
+     * Boot up the repository, pushing criteria
+     * @throws \Ymstars\Repository\Exceptions\RepositoryException
+     */
+    public function boot()
+    {
+        $this->pushCriteria(app(RequestCriteria::class));
+    }
+    
+}
