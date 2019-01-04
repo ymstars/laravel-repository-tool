@@ -2,6 +2,7 @@
     "name": "ymstars/laravel-repository-tool",
     "description": "laravel repository tool product by ymstars",
     "type": "library",
+    "version": "1.0.0",
     "require": {
         "illuminate/http": "~5.0",
         "illuminate/config": "~5.0",
