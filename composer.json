@@ -1,5 +1,5 @@
 {
-    "name": "ymm/laravel-repository-tool",
+    "name": "ymstars/laravel-repository-tool",
     "description": "laravel repository tool product by ymstars",
     "type": "library",
     "require": {
