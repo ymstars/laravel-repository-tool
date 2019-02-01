@@ -249,6 +249,7 @@ return [
             'presenters'   => 'Api/Presenters',
             'provider'     => 'RepositoryBindingServiceProvider',
             'criteria'     => 'Repositories/Criteria',
+            'service'      => 'Services'
         ]
     ]
 ];
