@@ -98,7 +98,7 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
         $this->app = $app;
         $this->criteria = new Collection();
         $this->makeModel();
-        $this->makePresenter($this->defaultPresenterClass);
+        $this->makePresenter();
         $this->boot();
     }
 
@@ -959,7 +959,9 @@ abstract class BaseRepository implements RepositoryInterface, RepositoryCriteria
     public function getFormatJsonData($data, $presenterClass = null)
     {
         if ($presenterClass) {
-            return $this->setPresenter($presenterClass)->parserResult($data);
+            $this->setPresenter($presenterClass);
+        } else {
+            $this->setPresenter($this->defaultPresenterClass);
         }
         return $this->parserResult($data);
     }
