@@ -31,7 +31,7 @@ use Ymstars\Repository\Traits\ComparesVersionsTrait;
  * Class BaseRepository
  * @package Ymstars\Repository\Eloquent
  */
-abstract class BaseRepository implements RepositoryInterface, RepositoryCriteriaInterface
+abstract class BaseRepository implements RepositoryInterface
 {
     use ComparesVersionsTrait;
 
