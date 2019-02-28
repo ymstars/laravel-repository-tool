@@ -13,7 +13,7 @@ namespace Ymstars\Repository\Contracts;
 
 use Ymstars\Repository\Exceptions\RepositoryException;
 
-interface RepositoryInterface extends RepositoryCriteriaInterface, CacheableInterface
+interface RepositoryInterface extends RepositoryCriteriaInterface
 {
 
     /**
