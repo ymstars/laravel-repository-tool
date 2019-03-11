@@ -954,7 +954,6 @@ abstract class BaseRepository implements RepositoryInterface
      * @param $data
      * @param null $presenterClass
      * @return mixed
-     * @throws RepositoryException
      */
     public function getFormatJsonData($data, $presenterClass = null)
     {

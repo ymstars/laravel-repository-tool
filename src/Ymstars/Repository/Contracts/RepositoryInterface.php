@@ -11,8 +11,6 @@
 namespace Ymstars\Repository\Contracts;
 
 
-use Ymstars\Repository\Exceptions\RepositoryException;
-
 interface RepositoryInterface extends RepositoryCriteriaInterface
 {
 
@@ -21,7 +19,6 @@ interface RepositoryInterface extends RepositoryCriteriaInterface
      * @param $data
      * @param null $presenterClass
      * @return mixed
-     * @throws RepositoryException
      */
     public function getFormatJsonData($data, $presenterClass = null);
 
